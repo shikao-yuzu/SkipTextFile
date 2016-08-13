@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using SkipTextFile;
 
 public static class Entry

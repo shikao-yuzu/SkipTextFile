@@ -1,4 +1,4 @@
-ï»¿using System;
+using System;
 using System.IO;
 
 namespace SkipTextFile
@@ -50,7 +50,7 @@ namespace SkipTextFile
 
       if (File.Exists(path) == false)
       {
-        throw new FileNotFoundException(path + "ãŒå­˜åœ¨ã—ã¾ã›ã‚“ï¼");
+        throw new FileNotFoundException(path + "‚ª‘¶İ‚µ‚Ü‚¹‚ñD");
       }
 
       this.InputFilePath = path;
@@ -67,7 +67,7 @@ namespace SkipTextFile
 
       if (skip < 0)
       {
-        throw new ArgumentOutOfRangeException("SkipHeaderã¯0ä»¥ä¸Šã®æ•´æ•°ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ï¼");
+        throw new ArgumentOutOfRangeException("SkipHeader‚Í0ˆÈã‚Ì®”‚Å‚ ‚é•K—v‚ª‚ ‚è‚Ü‚·D");
       }
 
       this.SkipHeader = skip;
@@ -79,7 +79,7 @@ namespace SkipTextFile
 
       if (skip < 1)
       {
-        throw new ArgumentOutOfRangeException("SkipLinesã¯æ­£ã®æ•´æ•°ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ï¼");
+        throw new ArgumentOutOfRangeException("SkipLines‚Í³‚Ì®”‚Å‚ ‚é•K—v‚ª‚ ‚è‚Ü‚·D");
       }
 
       this.SkipLines = skip;
